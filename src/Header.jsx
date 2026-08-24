@@ -1,5 +1,8 @@
 import ciLogo from './assets/ci.png'
 
+const BASE_URL = import.meta.env.BASE_URL.replace(/\/$/, '')
+const withBase = (path) => `${BASE_URL}${path}`
+
 function Header() {
   return (
     <>
@@ -17,7 +20,7 @@ function Header() {
       <header className="header">
         <div className="header-inner">
 
-          <a href="/" className="logo">
+          <a href={withBase('/')} className="logo">
 
             <img
               src={ciLogo}
@@ -32,8 +35,8 @@ function Header() {
           </a>
 
           <nav>
-            <a href="/company">회사소개</a>
-            <a href="/disposer/features">디스포저안내</a>
+            <a href={withBase('/company')}>회사소개</a>
+            <a href={withBase('/disposer/features')}>디스포저안내</a>
             <a href="#">제품소개</a>
             <a href="#">인허가등록사항</a>
             <a href="#">대리점모집</a>

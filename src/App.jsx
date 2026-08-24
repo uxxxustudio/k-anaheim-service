@@ -13,6 +13,7 @@ import Company from './Company'
 import DisposerFeatures from './DisposerFeatures'
 import DisposerPurchase from './DisposerPurchase'
 import DisposerWarranty from './DisposerWarranty'
+import DisposerWarranty from './DisposerUsage'
 import Footer from './Footer'
 
 const BASE_PATH = '/k-anaheim-service'
@@ -51,12 +52,12 @@ const products = [
     price: '880,000원',
     image: thumb258,
   },
-  {
+ /* {
     model: '358',
     name: '고급형',
     price: '990,000원',
     image: null,
-  },
+  },*/
   {
     model: '458',
     name: '최고급형',
@@ -125,10 +126,10 @@ const productMenus = [
     label: '일반형 258',
     path: '/products/258',
   },
-  {
+/*  {
     label: '고급형 358',
     path: '/products/358',
-  },
+  },*/
   {
     label: '최고급형 458',
     path: '/products/458',

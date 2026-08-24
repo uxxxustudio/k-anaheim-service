@@ -1,0 +1,744 @@
+/* =========================================================
+   Disposer Installation
+   ========================================================= */
+
+.installation-page {
+  width: 100%;
+  background: #fff;
+  color: #111;
+}
+
+
+/* =========================================================
+   HERO
+   DisposerWarranty와 동일한 구조 / 비율
+   ========================================================= */
+
+.installation-hero {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+}
+
+.installation-hero__background {
+  position: absolute;
+  inset: 0;
+}
+
+.installation-hero__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.installation-hero__background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.installation-hero__content {
+  position: relative;
+  z-index: 1;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.installation-hero__eyebrow {
+  margin-bottom: 28px;
+
+  color: #123b8f;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.installation-hero__content h1 {
+  margin: 0;
+
+  color: #111;
+
+  font-size: clamp(52px, 5vw, 76px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+.installation-hero__content p {
+  margin: 32px 0 0;
+
+  color: #555;
+
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.025em;
+}
+
+.installation-hero__line {
+  width: 46px;
+  height: 3px;
+
+  margin-top: 42px;
+
+  background: #1748a0;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.installation-content {
+  width: min(1380px, calc(100% - 100px));
+
+  margin: 0 auto;
+
+  padding: 105px 0 120px;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.installation-intro {
+  text-align: center;
+
+  margin-bottom: 65px;
+}
+
+.installation-intro > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #1748a0;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.installation-intro h2 {
+  margin: 0;
+
+  color: #111;
+
+  font-size: clamp(34px, 3vw, 48px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.045em;
+}
+
+.installation-intro p {
+  margin: 18px 0 0;
+
+  color: #666;
+
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   INSTALLATION GRID
+   ========================================================= */
+
+.installation-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.installation-card {
+  position: relative;
+
+  min-height: 430px;
+
+  padding: 38px 40px 42px;
+
+  border: 1px solid #e3e7ee;
+  border-radius: 4px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+
+/* 카드 상단 */
+
+.installation-card__top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+
+/* 번호 */
+
+.installation-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: #1748a0;
+  color: #fff;
+
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+
+/* 아이콘 영역
+   실제 이미지 없이 간단한 선형 그래픽 느낌 */
+
+.installation-card__icon {
+  position: relative;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: #f5f7fb;
+}
+
+
+/* 각 카드 아이콘의 기본 형태 */
+
+.installation-card__icon::before,
+.installation-card__icon::after,
+.installation-card__icon span {
+  content: '';
+
+  position: absolute;
+
+  border: 2px solid #1748a0;
+
+  box-sizing: border-box;
+}
+
+
+/* 01 - 플랜지 */
+
+.installation-card:nth-child(1)
+.installation-card__icon::before {
+  width: 30px;
+  height: 12px;
+
+  left: 14px;
+  top: 24px;
+
+  border-radius: 2px;
+}
+
+.installation-card:nth-child(1)
+.installation-card__icon::after {
+  width: 18px;
+  height: 18px;
+
+  left: 20px;
+  top: 14px;
+
+  border-radius: 50%;
+}
+
+
+/* 02 - 고정 */
+
+.installation-card:nth-child(2)
+.installation-card__icon::before {
+  width: 28px;
+  height: 28px;
+
+  left: 15px;
+  top: 15px;
+
+  border-radius: 50%;
+}
+
+.installation-card:nth-child(2)
+.installation-card__icon::after {
+  width: 12px;
+  height: 12px;
+
+  left: 23px;
+  top: 23px;
+
+  border-radius: 50%;
+}
+
+
+/* 03 - 마운트링 */
+
+.installation-card:nth-child(3)
+.installation-card__icon::before {
+  width: 34px;
+  height: 18px;
+
+  left: 12px;
+  top: 20px;
+
+  border-radius: 50%;
+}
+
+.installation-card:nth-child(3)
+.installation-card__icon::after {
+  width: 18px;
+  height: 8px;
+
+  left: 20px;
+  top: 25px;
+
+  border-radius: 50%;
+}
+
+
+/* 04 - 본체 결합 */
+
+.installation-card:nth-child(4)
+.installation-card__icon::before {
+  width: 24px;
+  height: 30px;
+
+  left: 17px;
+  top: 14px;
+
+  border-radius: 3px;
+}
+
+.installation-card:nth-child(4)
+.installation-card__icon::after {
+  width: 34px;
+  height: 4px;
+
+  left: 12px;
+  top: 29px;
+
+  border-radius: 2px;
+}
+
+
+/* 05 - 엘보관 */
+
+.installation-card:nth-child(5)
+.installation-card__icon::before {
+  width: 24px;
+  height: 24px;
+
+  left: 17px;
+  top: 17px;
+
+  border-radius: 50%;
+}
+
+.installation-card:nth-child(5)
+.installation-card__icon::after {
+  width: 12px;
+  height: 22px;
+
+  left: 23px;
+  top: 11px;
+
+  border-radius: 6px;
+}
+
+
+/* 06 - 확인 */
+
+.installation-card:nth-child(6)
+.installation-card__icon::before {
+  width: 32px;
+  height: 32px;
+
+  left: 13px;
+  top: 13px;
+
+  border-radius: 50%;
+}
+
+.installation-card:nth-child(6)
+.installation-card__icon::after {
+  width: 14px;
+  height: 7px;
+
+  left: 22px;
+  top: 25px;
+
+  border-left: 2px solid #1748a0;
+  border-bottom: 2px solid #1748a0;
+
+  border-top: 0;
+  border-right: 0;
+
+  transform: rotate(-45deg);
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.installation-card h3 {
+  margin: 0 0 30px;
+
+  color: #111;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.045em;
+}
+
+.installation-card__details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding-top: 24px;
+
+  border-top: 1px solid #edf0f4;
+}
+
+.installation-card__details > div {
+  display: grid;
+
+  grid-template-columns: 115px minmax(0, 1fr);
+
+  column-gap: 18px;
+
+  align-items: start;
+}
+
+.installation-card__details strong {
+  color: #1748a0;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+}
+
+.installation-card__details p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.03em;
+}
+
+.installation-card__details em {
+  color: #777;
+
+  font-style: normal;
+}
+
+
+/* =========================================================
+   CAUTION
+   ========================================================= */
+
+.installation-caution {
+  margin-top: 105px;
+
+  padding-top: 55px;
+
+  border-top: 1px solid #dfe3e9;
+}
+
+.installation-caution__heading {
+  display: flex;
+
+  align-items: baseline;
+  gap: 22px;
+
+  margin-bottom: 42px;
+}
+
+.installation-caution__heading span {
+  color: #1748a0;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.installation-caution__heading h2 {
+  margin: 0;
+
+  color: #111;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.045em;
+}
+
+
+/* 주의사항 2개 */
+
+.installation-caution__content {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  border-top: 1px solid #e4e7eb;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.installation-caution__item {
+  display: grid;
+
+  grid-template-columns: 80px minmax(0, 1fr);
+
+  gap: 25px;
+
+  padding: 34px 35px;
+
+  box-sizing: border-box;
+}
+
+.installation-caution__item + .installation-caution__item {
+  border-left: 1px solid #e4e7eb;
+}
+
+.installation-caution__item strong {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 68px;
+  height: 42px;
+
+  background: #1748a0;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  box-sizing: border-box;
+}
+
+.installation-caution__item p {
+  margin: 0;
+
+  color: #444;
+
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .installation-content {
+    width: min(100% - 60px, 900px);
+
+    padding-top: 80px;
+  }
+
+  .installation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .installation-card {
+    min-height: auto;
+  }
+
+  .installation-caution__content {
+    grid-template-columns: 1fr;
+  }
+
+  .installation-caution__item + .installation-caution__item {
+    border-left: 0;
+    border-top: 1px solid #e4e7eb;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .installation-hero {
+    height: 360px;
+  }
+
+  .installation-hero__content {
+    padding: 30px 20px;
+  }
+
+  .installation-hero__eyebrow {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+  }
+
+  .installation-hero__content h1 {
+    font-size: 48px;
+  }
+
+  .installation-hero__content p {
+    margin-top: 22px;
+
+    font-size: 16px;
+  }
+
+  .installation-hero__line {
+    margin-top: 30px;
+  }
+
+
+  .installation-content {
+    width: calc(100% - 36px);
+
+    padding: 70px 0 80px;
+  }
+
+
+  .installation-intro {
+    margin-bottom: 45px;
+  }
+
+  .installation-intro > span {
+    font-size: 12px;
+  }
+
+  .installation-intro h2 {
+    font-size: 32px;
+  }
+
+  .installation-intro p {
+    font-size: 15px;
+  }
+
+
+  .installation-card {
+    padding: 30px 24px 32px;
+  }
+
+  .installation-card__top {
+    margin-bottom: 24px;
+  }
+
+  .installation-number {
+    width: 46px;
+    height: 46px;
+
+    font-size: 15px;
+  }
+
+  .installation-card__icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .installation-card h3 {
+    font-size: 23px;
+    margin-bottom: 24px;
+  }
+
+
+  .installation-card__details {
+    gap: 18px;
+    padding-top: 20px;
+  }
+
+  .installation-card__details > div {
+    display: block;
+  }
+
+  .installation-card__details strong {
+    display: block;
+
+    margin-bottom: 5px;
+  }
+
+  .installation-card__details p {
+    font-size: 14px;
+  }
+
+
+  .installation-caution {
+    margin-top: 75px;
+    padding-top: 40px;
+  }
+
+  .installation-caution__heading {
+    display: block;
+
+    margin-bottom: 30px;
+  }
+
+  .installation-caution__heading span {
+    display: block;
+
+    margin-bottom: 10px;
+  }
+
+  .installation-caution__heading h2 {
+    font-size: 30px;
+  }
+
+  .installation-caution__item {
+    display: block;
+
+    padding: 28px 22px;
+  }
+
+  .installation-caution__item strong {
+    margin-bottom: 15px;
+  }
+
+  .installation-caution__item p {
+    font-size: 14px;
+  }
+
+}

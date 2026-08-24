@@ -17,6 +17,15 @@ import Footer from './Footer'
 
 
 /* =========================================================
+   GITHUB PAGES BASE PATH
+========================================================= */
+
+const BASE_URL = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+const withBase = (path) => `${BASE_URL}${path}`
+
+
+/* =========================================================
    PRODUCTS
 ========================================================= */
 
@@ -184,9 +193,9 @@ function LocalNav({ title, menus }) {
 
             <a
               key={menu.path}
-              href={menu.path}
+              href={withBase(menu.path)}
               className={
-                window.location.pathname === menu.path
+                window.location.pathname.replace(BASE_URL, '') === menu.path
                   ? 'active'
                   : ''
               }
@@ -233,7 +242,7 @@ function Header() {
 
           {/* LOGO */}
           <div className="logo">
-            <a href="/">
+            <a href={withBase('/')}>
               <img
                 src={ciLogo}
                 alt="한국애너하임 서비스센터 CI"
@@ -251,7 +260,7 @@ function Header() {
           <nav className="main-nav">
 
             {/* 회사소개 */}
-            <a href="/company">
+            <a href={withBase('/company')}>
               회사소개
             </a>
 
@@ -260,11 +269,11 @@ function Header() {
             <div className="nav-dropdown">
 
               <a
-              href="/disposer/features"
-              className="nav-dropdown-trigger"
-            >
-              디스포저안내
-            </a>
+                href={withBase('/disposer/features')}
+                className="nav-dropdown-trigger"
+              >
+                디스포저안내
+              </a>
 
               <div className="dropdown-menu disposer-dropdown">
 
@@ -278,7 +287,7 @@ function Header() {
                   {disposerMenus.map((menu) => (
                     <a
                       key={menu.path}
-                      href={menu.path}
+                      href={withBase(menu.path)}
                     >
                       {menu.label}
                     </a>
@@ -295,7 +304,7 @@ function Header() {
             <div className="nav-dropdown">
 
               <a
-                href="/products"
+                href={withBase('/products')}
                 className="nav-dropdown-trigger"
               >
                 제품소개
@@ -313,7 +322,7 @@ function Header() {
                   {productMenus.map((menu) => (
                     <a
                       key={menu.path}
-                      href={menu.path}
+                      href={withBase(menu.path)}
                     >
                       {menu.label}
                     </a>
@@ -342,7 +351,7 @@ function Header() {
             <div className="nav-dropdown">
 
               <a
-                href="/support/install"
+                href={withBase('/support/install')}
                 className="nav-dropdown-trigger"
               >
                 고객지원
@@ -360,7 +369,7 @@ function Header() {
                   {customerMenus.map((menu) => (
                     <a
                       key={menu.path}
-                      href={menu.path}
+                      href={withBase(menu.path)}
                     >
                       {menu.label}
                     </a>
@@ -407,6 +416,7 @@ function PageLayout({ children, localNav = null }) {
       <Footer />
     </div>
   )
+
 }
 
 
@@ -446,7 +456,9 @@ function DisposerPage() {
     </PageLayout>
 
   )
+
 }
+
 
 /* =========================================================
    SIMPLE SUB PAGE
@@ -490,6 +502,7 @@ function SimpleSubPage({
     </PageLayout>
 
   )
+
 }
 
 
@@ -500,7 +513,9 @@ function SimpleSubPage({
 function App() {
 
   const path =
-    window.location.pathname
+    window.location.pathname.startsWith(BASE_URL)
+      ? window.location.pathname.slice(BASE_URL.length) || '/'
+      : window.location.pathname
 
 
   /* =========================
@@ -536,38 +551,38 @@ function App() {
 
   if (path === '/disposer/purchase') {
 
-  return (
-    <PageLayout
-      localNav={
-        <LocalNav
-          title="DISPOSER"
-          menus={disposerMenus}
-        />
-      }
-    >
-      <DisposerPurchase />
-    </PageLayout>
-  )
+    return (
+      <PageLayout
+        localNav={
+          <LocalNav
+            title="DISPOSER"
+            menus={disposerMenus}
+          />
+        }
+      >
+        <DisposerPurchase />
+      </PageLayout>
+    )
 
-}
+  }
 
 
   if (path === '/disposer/warranty') {
 
-  return (
-    <PageLayout
-      localNav={
-        <LocalNav
-          title="DISPOSER"
-          menus={disposerMenus}
-        />
-      }
-    >
-      <DisposerWarranty />
-    </PageLayout>
-  )
+    return (
+      <PageLayout
+        localNav={
+          <LocalNav
+            title="DISPOSER"
+            menus={disposerMenus}
+          />
+        }
+      >
+        <DisposerWarranty />
+      </PageLayout>
+    )
 
-}
+  }
 
 
   if (path === '/disposer/how-to-use') {
@@ -1049,6 +1064,7 @@ function App() {
     </div>
 
   )
+
 }
 
 

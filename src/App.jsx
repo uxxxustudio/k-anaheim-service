@@ -15,6 +15,9 @@ import DisposerPurchase from './DisposerPurchase'
 import DisposerWarranty from './DisposerWarranty'
 import Footer from './Footer'
 
+const BASE_PATH = '/k-anaheim-service'
+const linkPath = (path) => `${BASE_PATH}${path}`
+
 
 /* =========================================================
    GITHUB PAGES BASE PATH

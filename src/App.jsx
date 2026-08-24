@@ -13,7 +13,7 @@ import Company from './Company'
 import DisposerFeatures from './DisposerFeatures'
 import DisposerPurchase from './DisposerPurchase'
 import DisposerWarranty from './DisposerWarranty'
-import DisposerWarranty from './DisposerUsage'
+import DisposerUsage from './DisposerUsage'
 import Footer from './Footer'
 
 const BASE_PATH = '/k-anaheim-service'

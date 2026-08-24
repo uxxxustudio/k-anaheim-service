@@ -591,13 +591,20 @@ function App() {
 
   if (path === '/disposer/how-to-use') {
 
-    return (
-      <SimpleSubPage
-        title="사용방법"
-      />
-    )
-
-  }
+     return (
+       <PageLayout
+         localNav={
+           <LocalNav
+             title="DISPOSER"
+             menus={disposerMenus}
+           />
+         }
+       >
+         <DisposerUsage />
+       </PageLayout>
+     )
+   
+   }
 
 
   if (path === '/disposer/installation') {

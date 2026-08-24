@@ -1,0 +1,595 @@
+.warranty-page {
+  background: #fff;
+}
+
+
+/* =========================
+   HERO
+   구입안내와 동일한 높이 / 이미지
+========================= */
+
+.warranty-hero {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+}
+
+.warranty-hero__background {
+  position: absolute;
+  inset: 0;
+}
+
+.warranty-hero__background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+}
+
+.warranty-hero__content {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.warranty-hero__eyebrow {
+  margin-bottom: 22px;
+
+  color: #153d91;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.warranty-hero h1 {
+  margin: 0;
+
+  color: #111;
+
+  font-size: 64px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+}
+
+.warranty-hero p {
+  margin: 30px 0 0;
+
+  color: #666;
+
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.warranty-hero__line {
+  width: 36px;
+  height: 3px;
+
+  margin-top: 32px;
+
+  background: #153d91;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.warranty-content {
+  width: min(1320px, calc(100% - 120px));
+
+  margin: 0 auto;
+
+  padding: 120px 0 150px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.warranty-intro {
+  padding-bottom: 90px;
+
+  border-bottom: 1px solid #e5e8ed;
+}
+
+.warranty-intro > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #153d91;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.warranty-intro h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: -0.045em;
+}
+
+.warranty-intro p {
+  margin: 24px 0 0;
+
+  color: #69717d;
+
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.warranty-section {
+  padding: 100px 0;
+
+  border-bottom: 1px solid #e5e8ed;
+}
+
+.warranty-section-title {
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+
+  gap: 40px;
+
+  align-items: start;
+
+  margin-bottom: 55px;
+}
+
+.warranty-section-title > span {
+  color: #153d91;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.warranty-section-title small {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #8b929d;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.warranty-section-title h3 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+}
+
+.warranty-section-title p {
+  margin: 15px 0 0;
+
+  color: #69717d;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   POLICY
+========================= */
+
+.warranty-policy {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+}
+
+.warranty-policy article {
+  padding-left: 28px;
+
+  border-left: 2px solid #edf0f4;
+}
+
+.warranty-policy h4 {
+  margin: 0 0 24px;
+
+  color: #172033;
+
+  font-size: 20px;
+  letter-spacing: -0.035em;
+}
+
+.warranty-policy ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.warranty-policy li {
+  position: relative;
+
+  padding-left: 16px;
+  margin-bottom: 15px;
+
+  color: #626b78;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  word-break: keep-all;
+}
+
+.warranty-policy li::before {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  top: 12px;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #153d91;
+}
+
+.warranty-policy li em {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #9299a3;
+
+  font-size: 13px;
+  font-style: normal;
+}
+
+.warranty-note {
+  margin: 24px 0 0;
+
+  color: #153d91;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   IMPORTANT
+========================= */
+
+.warranty-important {
+  margin-top: 55px;
+
+  padding: 28px 32px;
+
+  background: #f6f7f9;
+}
+
+.warranty-important p {
+  margin: 0;
+
+  color: #6b727d;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.warranty-important p + p {
+  margin-top: 8px;
+}
+
+.warranty-important strong {
+  color: #153d91;
+}
+
+
+/* =========================
+   WARRANTY CARDS
+========================= */
+
+.warranty-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid #dfe3e9;
+  border-bottom: 1px solid #dfe3e9;
+}
+
+.warranty-cards article {
+  min-height: 190px;
+
+  padding: 34px;
+
+  border-left: 1px solid #dfe3e9;
+}
+
+.warranty-cards article:first-child {
+  border-left: 0;
+}
+
+.warranty-cards span {
+  display: block;
+
+  margin-bottom: 28px;
+
+  color: #153d91;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.warranty-cards strong {
+  display: block;
+
+  color: #172033;
+
+  font-size: 19px;
+}
+
+.warranty-cards p {
+  margin: 12px 0 0;
+
+  color: #69717d;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   DEFECT
+========================= */
+
+.warranty-defect {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 1px solid #dfe3e9;
+  border-bottom: 1px solid #dfe3e9;
+}
+
+.warranty-defect > div {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  min-height: 130px;
+
+  padding: 30px 35px;
+
+  border-left: 1px solid #dfe3e9;
+}
+
+.warranty-defect > div:first-child {
+  border-left: 0;
+}
+
+.warranty-defect strong {
+  color: #172033;
+
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.warranty-defect span {
+  flex: 0 0 auto;
+
+  padding: 8px 14px;
+
+  background: #f1f4f8;
+
+  color: #153d91;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   SERVICE
+========================= */
+
+.warranty-service {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  margin-top: 80px;
+
+  padding: 55px 60px;
+
+  background: #10284f;
+
+  color: #fff;
+}
+
+.warranty-service > div:first-child > span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #9eb2d8;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.warranty-service h3 {
+  margin: 0;
+
+  font-size: 27px;
+  line-height: 1.45;
+  letter-spacing: -0.04em;
+}
+
+.warranty-service p {
+  margin: 18px 0 0;
+
+  color: #b9c3d3;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.warranty-service-contact {
+  flex: 0 0 auto;
+
+  text-align: right;
+}
+
+.warranty-service-contact small {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #aeb9cb;
+
+  font-size: 12px;
+}
+
+.warranty-service-contact strong {
+  font-size: 30px;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .warranty-hero {
+    height: 370px;
+  }
+
+  .warranty-hero h1 {
+    font-size: 46px;
+  }
+
+  .warranty-hero p {
+    padding: 0 25px;
+
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .warranty-content {
+    width: calc(100% - 40px);
+
+    padding: 80px 0 100px;
+  }
+
+  .warranty-intro {
+    padding-bottom: 60px;
+  }
+
+  .warranty-intro h2 {
+    font-size: 30px;
+  }
+
+  .warranty-section {
+    padding: 70px 0;
+  }
+
+  .warranty-section-title {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 40px;
+  }
+
+  .warranty-section-title h3 {
+    font-size: 25px;
+  }
+
+  .warranty-policy {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .warranty-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .warranty-cards article {
+    min-height: auto;
+
+    border-left: 0;
+    border-bottom: 1px solid #dfe3e9;
+  }
+
+  .warranty-cards article:last-child {
+    border-bottom: 0;
+  }
+
+  .warranty-defect {
+    grid-template-columns: 1fr;
+  }
+
+  .warranty-defect > div {
+    border-left: 0;
+    border-bottom: 1px solid #dfe3e9;
+  }
+
+  .warranty-defect > div:last-child {
+    border-bottom: 0;
+  }
+
+  .warranty-service {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 40px;
+  }
+
+  .warranty-service-contact {
+    text-align: left;
+  }
+
+}

@@ -1,5 +1,5 @@
 import './DisposerUsage.css'
-import heroImage from './assets/hero-wastemaid-458.png'
+import purchaseHero from './assets/purchase-hero.jpg'
 
 function Icon({ type }) {
   const common = {
@@ -104,29 +104,36 @@ function DisposerUsage() {
     <main className="disposer-usage">
 
       {/* 사용방법 HERO */}
-      <section
-        className="disposer-usage-hero"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-        }}
-      >
-        <div className="disposer-usage-hero-overlay">
-          <div className="disposer-usage-hero-copy">
+      <section className="warranty-hero">
 
-            <span className="usage-hero-eyebrow">
-              WASTEMAID
-            </span>
+        <div className="warranty-hero__background">
 
-            <h1>사용방법</h1>
+          <img
+            src={purchaseHero}
+            alt=""
+          />
 
-            <p>
-              애너하임 디스포저의 간단하고 안전한 사용방법을 안내해드립니다.
-            </p>
-
-            <div className="usage-hero-line" />
-
-          </div>
         </div>
+
+
+        <div className="warranty-hero__content">
+
+          <span className="warranty-hero__eyebrow">
+            WASTEMAID
+          </span>
+
+          <h1>
+            사용방법
+          </h1>
+
+          <p>
+            애너하임 디스포저의 간단하고 안전한 사용방법을 안내해드립니다.
+          </p>
+
+          <div className="warranty-hero__line" />
+
+        </div>
+
       </section>
 
 

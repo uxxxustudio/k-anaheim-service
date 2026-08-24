@@ -1,4 +1,5 @@
 import './DisposerUsage.css'
+import heroImage from './assets/hero-wastemaid-458.png'
 
 function Icon({ type }) {
   const common = {
@@ -102,9 +103,35 @@ function DisposerUsage() {
   return (
     <main className="disposer-usage">
 
-      {/* 기존 디스포저 안내 페이지의 공통 히어로 영역은 그대로 사용 */}
+      {/* 사용방법 HERO */}
+      <section
+        className="disposer-usage-hero"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+        }}
+      >
+        <div className="disposer-usage-hero-overlay">
+          <div className="disposer-usage-hero-copy">
+
+            <span className="usage-hero-eyebrow">
+              WASTEMAID
+            </span>
+
+            <h1>사용방법</h1>
+
+            <p>
+              애너하임 디스포저의 간단하고 안전한 사용방법을 안내해드립니다.
+            </p>
+
+            <div className="usage-hero-line" />
+
+          </div>
+        </div>
+      </section>
+
 
       <section className="usage-section">
+
         <div className="usage-section-heading">
           <span />
           <h1>음식물분쇄기 사용방법</h1>
@@ -133,6 +160,7 @@ function DisposerUsage() {
             </p>
           </article>
 
+
           <article className="usage-step">
             <div className="step-number">2</div>
 
@@ -149,6 +177,7 @@ function DisposerUsage() {
             </p>
           </article>
 
+
           <article className="usage-step">
             <div className="step-number">3</div>
 
@@ -156,7 +185,11 @@ function DisposerUsage() {
               <Icon type="food" />
             </div>
 
-            <h2>음식물 쓰레기를 스토퍼를 이용하여<br />조금씩 투입합니다.</h2>
+            <h2>
+              음식물 쓰레기를 스토퍼를 이용하여
+              <br />
+              조금씩 투입합니다.
+            </h2>
 
             <p>
               음식물 찌꺼기, 야채껍질, 과일껍질, 작은 뼈,
@@ -169,6 +202,7 @@ function DisposerUsage() {
             </strong>
           </article>
 
+
           <article className="usage-step">
             <div className="step-number">4</div>
 
@@ -176,7 +210,11 @@ function DisposerUsage() {
               <Icon type="timer" />
             </div>
 
-            <h2>물과 함께 약 25초 정도<br />더 작동시킨 후 멈춥니다.</h2>
+            <h2>
+              물과 함께 약 25초 정도
+              <br />
+              더 작동시킨 후 멈춥니다.
+            </h2>
 
             <p>
               분쇄가 끝난 후에도 약 25초간 물과 디스포저를
@@ -193,8 +231,10 @@ function DisposerUsage() {
 
         <article className="info-card info-tip">
           <div className="info-icon">✓</div>
+
           <div>
             <h2>사용 팁</h2>
+
             <ul>
               <li>항상 물을 틀어 놓은 상태에서 사용하세요.</li>
               <li>음식물은 조금씩 나누어 투입하세요.</li>
@@ -203,10 +243,13 @@ function DisposerUsage() {
           </div>
         </article>
 
+
         <article className="info-card info-warning">
           <div className="info-icon">!</div>
+
           <div>
             <h2>주의사항</h2>
+
             <ul>
               <li>마른 섬유질(마늘껍질, 양파껍질 등)은 넣지 마세요.</li>
               <li>제품 하단부의 버튼을 누르거나 포크, 수저 등을 넣지 마세요.</li>
@@ -215,10 +258,13 @@ function DisposerUsage() {
           </div>
         </article>
 
+
         <article className="info-card info-food">
           <div className="info-icon">⌁</div>
+
           <div>
             <h2>분쇄 가능한 음식물</h2>
+
             <ul>
               <li>채소 및 과일 찌꺼기</li>
               <li>밥, 국수, 빵, 커피찌꺼기</li>
@@ -234,22 +280,30 @@ function DisposerUsage() {
 
         <div className="self-check-heading">
           <span />
+
           <div>
-            <h1>간단한 자가 A/S 및 유지방법을 알아두시면 도움이 됩니다.</h1>
+            <h1>
+              간단한 자가 A/S 및 유지방법을 알아두시면 도움이 됩니다.
+            </h1>
+
             <p>
               주방에서 안심하고 오래 사용할 수 있도록, 애너하임 디스포저의 점검 포인트와 유지방법을 안내드립니다.
             </p>
           </div>
+
           <span />
         </div>
+
 
         <div className="self-check-content">
 
           <div className="self-check-product">
+
             <div className="product-title">
               <span>주방문화의 혁신을 이루는</span>
               <strong>애너하임 디스포저</strong>
             </div>
+
 
             <div className="product-placeholder">
               {/* 기존 디스포저 안내 페이지에서 사용하는 제품 이미지를 여기에 연결 */}
@@ -258,21 +312,25 @@ function DisposerUsage() {
               </div>
             </div>
 
+
             <p>
               화공약품 및 부식성 액체의 사용을 금하여 주시고
               이는 기계고장의 주요 원인이 됩니다.
             </p>
+
           </div>
 
 
           <div className="self-check-list">
 
             <article className="check-item">
+
               <div className="check-icon">
                 <Icon type="noise" />
               </div>
 
               <div>
+
                 <div className="check-title">
                   <span>1</span>
                   <h2>큰 소음이 발생시</h2>
@@ -281,16 +339,20 @@ function DisposerUsage() {
                 <p>
                   조개껍질, 수세미, 포크 등 음식물 이외의 물질이 들어갔을 경우입니다.
                 </p>
+
               </div>
+
             </article>
 
 
             <article className="check-item">
+
               <div className="check-icon">
                 <Icon type="power" />
               </div>
 
               <div>
+
                 <div className="check-title">
                   <span>2</span>
                   <h2>디스포저가 작동이 안될 경우</h2>
@@ -299,16 +361,20 @@ function DisposerUsage() {
                 <p>
                   전원을 차단 후 집게 등을 이용하여 디스포저 내부의 이물질을 제거해 줍니다.
                 </p>
+
               </div>
+
             </article>
 
 
             <article className="check-item">
+
               <div className="check-icon">
                 <Icon type="leak" />
               </div>
 
               <div>
+
                 <div className="check-title">
                   <span>3</span>
                   <h2>디스포저가 누수가 될 경우</h2>
@@ -317,16 +383,20 @@ function DisposerUsage() {
                 <p>
                   연결 부위 접합상태 및 고무패킹 상태를 체크하세요.
                 </p>
+
               </div>
+
             </article>
 
 
             <article className="check-item check-item-long">
+
               <div className="check-icon">
                 <Icon type="maintenance" />
               </div>
 
               <div>
+
                 <div className="check-title">
                   <span>4</span>
                   <h2>디스포저 유지</h2>
@@ -334,17 +404,22 @@ function DisposerUsage() {
 
                 <p>
                   화공약품 및 부식성 액체의 사용을 금하여 주시고 이는 기계고장의 주요 원인이 됩니다.
-                  <br /><br />
+                  <br />
+                  <br />
                   디스포저 사용시 많은 양의 음식물쓰레기를 한꺼번에 처리하면 기계에 무리가 되어
                   자동으로 작동이 멈추게 되며 이때는 전원을 off시킨 후 기계안의 음식물쓰레기를
                   제거한 후 좌측 기계그림 하단의 빨간색 원안에 보이는 리셋버튼을 누른 후
                   약 5~6분 후에 전원을 다시 on시켜서 가동하시면 됩니다.
                 </p>
+
               </div>
+
             </article>
 
           </div>
+
         </div>
+
       </section>
 
 
@@ -352,10 +427,12 @@ function DisposerUsage() {
 
         <div className="do-not-title">
           <strong>넣지 마세요!</strong>
+
           <span>
             디스포저 고장 및 안전사고를 예방하기 위해 아래 품목은 투입하지 마세요.
           </span>
         </div>
+
 
         <div className="do-not-list">
 
@@ -400,6 +477,7 @@ function DisposerUsage() {
           </div>
 
         </div>
+
       </section>
 
     </main>

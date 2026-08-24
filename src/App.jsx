@@ -14,7 +14,7 @@ import DisposerFeatures from './DisposerFeatures'
 import DisposerPurchase from './DisposerPurchase'
 import DisposerWarranty from './DisposerWarranty'
 import DisposerUsage from './DisposerUsage'
-import DisposerInstrallation from './DisposerInstrallation'
+import DisposerInstallation from './DisposerInstallation'
 import Footer from './Footer'
 
 const BASE_PATH = '/k-anaheim-service'

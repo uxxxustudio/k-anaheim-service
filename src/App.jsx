@@ -14,6 +14,7 @@ import DisposerFeatures from './DisposerFeatures'
 import DisposerPurchase from './DisposerPurchase'
 import DisposerWarranty from './DisposerWarranty'
 import DisposerUsage from './DisposerUsage'
+import DisposerInstrallation from './DisposerInstrallation'
 import Footer from './Footer'
 
 const BASE_PATH = '/k-anaheim-service'
@@ -607,15 +608,22 @@ function App() {
    }
 
 
-  if (path === '/disposer/installation') {
-
-    return (
-      <SimpleSubPage
-        title="설치방법"
-      />
-    )
-
-  }
+    if (path === '/disposer/installation') {
+   
+     return (
+       <PageLayout
+         localNav={
+           <LocalNav
+             title="DISPOSER"
+             menus={disposerMenus}
+           />
+         }
+       >
+         <DisposerInstallation />
+       </PageLayout>
+     )
+   
+   }
 
 
   if (path === '/disposer/service') {

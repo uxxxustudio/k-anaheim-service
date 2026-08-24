@@ -1,0 +1,604 @@
+.disposer-usage {
+  width: 100%;
+  color: #222;
+  background: #fff;
+}
+
+/* =========================
+   공통 섹션
+========================= */
+
+.usage-section,
+.usage-info-grid,
+.self-check-section,
+.do-not-section {
+  width: min(1440px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================
+   사용방법
+========================= */
+
+.usage-section {
+  padding: 90px 0 70px;
+}
+
+.usage-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.usage-section-heading span {
+  width: 55px;
+  height: 2px;
+  background: #17469e;
+}
+
+.usage-section-heading h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.04em;
+}
+
+.usage-intro {
+  margin: 0 0 48px;
+  text-align: center;
+  font-size: 19px;
+  color: #555;
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================
+   1~4 단계
+========================= */
+
+.usage-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.usage-step {
+  position: relative;
+  min-height: 420px;
+  padding: 30px 28px 32px;
+  border: 1px solid #d9dfe8;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+  background: #17469e;
+  color: #fff;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 150px;
+
+  margin: 26px auto 24px;
+
+  border-radius: 50%;
+  background: #f4f7fb;
+}
+
+.usage-icon-svg {
+  width: 86px;
+  height: 86px;
+  stroke: #17469e;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.usage-step h2 {
+  margin: 0 0 16px;
+
+  font-size: 23px;
+  line-height: 1.45;
+  color: #111;
+  letter-spacing: -0.04em;
+}
+
+.usage-step p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  letter-spacing: -0.03em;
+}
+
+.step-note {
+  display: block;
+  margin-top: 10px;
+
+  font-size: 14px;
+  color: #17469e;
+}
+
+
+/* =========================
+   팁 / 주의 / 분쇄가능
+========================= */
+
+.usage-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  padding-bottom: 100px;
+}
+
+.info-card {
+  display: flex;
+  gap: 20px;
+
+  min-height: 190px;
+  padding: 30px;
+
+  border: 1px solid #dce1e8;
+  border-radius: 16px;
+}
+
+.info-tip {
+  background: #f6f9fd;
+}
+
+.info-warning {
+  background: #fffaf0;
+  border-color: #ead8a9;
+}
+
+.info-food {
+  background: #f8faf7;
+  border-color: #d5dfca;
+}
+
+.info-icon {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: #17469e;
+  color: #fff;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.info-warning .info-icon {
+  background: #d99616;
+}
+
+.info-food .info-icon {
+  background: #657d43;
+}
+
+.info-card h2 {
+  margin: 0 0 18px;
+
+  font-size: 24px;
+  color: #111;
+}
+
+.info-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.info-card li {
+  margin-bottom: 9px;
+
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+/* =========================
+   자가 A/S
+========================= */
+
+.self-check-section {
+  padding: 90px 0 70px;
+
+  border-top: 1px solid #e4e7eb;
+}
+
+.self-check-heading {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+
+  margin-bottom: 50px;
+}
+
+.self-check-heading > span {
+  height: 1px;
+  background: #cfd5dd;
+}
+
+.self-check-heading > span:first-child {
+  justify-self: end;
+  width: 110px;
+}
+
+.self-check-heading > span:last-child {
+  width: 110px;
+}
+
+.self-check-heading div {
+  text-align: center;
+}
+
+.self-check-heading h1 {
+  margin: 0;
+
+  font-size: 38px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.05em;
+}
+
+.self-check-heading p {
+  margin: 14px 0 0;
+
+  font-size: 17px;
+  color: #666;
+}
+
+
+/* =========================
+   제품 + 점검 리스트
+========================= */
+
+.self-check-content {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.self-check-product {
+  padding: 35px 30px;
+
+  border-radius: 18px;
+  background: #f5f8fc;
+}
+
+.product-title span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 17px;
+  color: #333;
+}
+
+.product-title strong {
+  display: block;
+
+  font-size: 31px;
+  color: #17469e;
+  letter-spacing: -0.05em;
+}
+
+.product-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 390px;
+  margin: 25px 0;
+
+  color: #17469e;
+  font-size: 24px;
+  letter-spacing: 0.08em;
+
+  border: 1px dashed #b7c7df;
+  border-radius: 12px;
+}
+
+.self-check-product p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+
+.self-check-list {
+  border-top: 2px solid #111;
+}
+
+.check-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 24px;
+
+  padding: 27px 0;
+
+  border-bottom: 1px solid #dfe3e8;
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+
+  border-radius: 50%;
+  background: #f3f6fa;
+}
+
+.check-icon .usage-icon-svg {
+  width: 45px;
+  height: 45px;
+}
+
+.check-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 10px;
+}
+
+.check-title span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #17469e;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.check-title h2 {
+  margin: 0;
+
+  font-size: 22px;
+  color: #111;
+}
+
+.check-item p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================
+   넣지 마세요
+========================= */
+
+.do-not-section {
+  padding: 35px 40px;
+  margin-bottom: 100px;
+
+  border: 1px solid #dce1e8;
+  border-radius: 16px;
+}
+
+.do-not-title {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  margin-bottom: 28px;
+}
+
+.do-not-title strong {
+  font-size: 27px;
+  color: #17469e;
+  white-space: nowrap;
+}
+
+.do-not-title span {
+  padding-left: 25px;
+
+  border-left: 1px solid #d9dde3;
+
+  font-size: 15px;
+  color: #666;
+}
+
+.do-not-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.do-not-list > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 105px;
+
+  border-left: 1px solid #e4e7eb;
+}
+
+.do-not-list > div:first-child {
+  border-left: 0;
+}
+
+.do-not-list span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid #d9dfe8;
+  border-radius: 50%;
+
+  color: #17469e;
+  font-size: 22px;
+}
+
+.do-not-list strong {
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* =========================
+   반응형
+========================= */
+
+@media (max-width: 1100px) {
+  .usage-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .usage-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .self-check-content {
+    grid-template-columns: 1fr;
+  }
+
+  .self-check-product {
+    max-width: 500px;
+  }
+
+  .do-not-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .do-not-list > div:nth-child(5) {
+    border-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .usage-section,
+  .usage-info-grid,
+  .self-check-section,
+  .do-not-section {
+    width: calc(100% - 32px);
+  }
+
+  .usage-section {
+    padding: 55px 0;
+  }
+
+  .usage-section-heading h1 {
+    font-size: 30px;
+  }
+
+  .usage-intro {
+    font-size: 16px;
+  }
+
+  .usage-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .usage-step {
+    min-height: auto;
+  }
+
+  .self-check-heading {
+    display: block;
+    text-align: center;
+  }
+
+  .self-check-heading > span {
+    display: none;
+  }
+
+  .self-check-heading h1 {
+    font-size: 29px;
+  }
+
+  .self-check-content {
+    gap: 35px;
+  }
+
+  .check-item {
+    grid-template-columns: 65px 1fr;
+    gap: 15px;
+  }
+
+  .check-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .check-title h2 {
+    font-size: 18px;
+  }
+
+  .do-not-section {
+    padding: 25px 18px;
+  }
+
+  .do-not-title {
+    display: block;
+  }
+
+  .do-not-title span {
+    display: block;
+    margin-top: 12px;
+    padding: 0;
+    border: 0;
+  }
+
+  .do-not-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .do-not-list > div:nth-child(odd) {
+    border-left: 0;
+  }
+}

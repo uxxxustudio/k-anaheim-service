@@ -602,3 +602,58 @@
     border-left: 0;
   }
 }
+/* =========================================================
+   USAGE HERO
+========================================================= */
+
+.disposer-usage-hero {
+  position: relative;
+  min-height: 440px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.disposer-usage-hero-overlay {
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.disposer-usage-hero-copy {
+  width: min(1200px, 90%);
+  text-align: center;
+}
+
+.usage-hero-eyebrow {
+  display: block;
+  margin-bottom: 24px;
+  color: #16439b;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.disposer-usage-hero-copy h1 {
+  margin: 0;
+  color: #111;
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.disposer-usage-hero-copy p {
+  margin: 28px 0 0;
+  color: #555;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.usage-hero-line {
+  width: 42px;
+  height: 3px;
+  margin: 42px auto 0;
+  background: #16439b;
+}
